@@ -8,12 +8,23 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+     <!-- ------------------- grafiKEH --------------------- -->
+    <!-- --------------------Modal HTML-------------------- -->
+    <div id="confirmModal" class="modal">
+      <div class="modal-content">
+        <p>Are you sure you want to delete?</p>
+        <button id="yesBtn">YES</button>
+        <button id="noBtn">NO</button>
+      </div>
+    </div>
+    <!-- --------------------Modal HTML-------------------- -->
+    <!-- ------------------- grafiKEH --------------------- -->
     <section id="output">
       <div id="expression"></div>
       <div id="result"></div>
     </section>
     <section id="input">
-      <button class="btn light" data-action="clear" data-value="C">C</button>
+      <button class="btn cButton" data-action="clear" data-value="C">C</button>
       <button class="btn light" data-action="negate" data-value="C">+/-</button>
       <button class="btn light" data-action="mod" data-value="%">%</button>
       <button class="btn blue" data-action="division" data-value="/">/</button>
@@ -38,5 +49,6 @@
       <button class="btn dark" data-action="backspace">&#9003;</button>
       <button class="btn blue" data-action="submit" data-value="=">=</button>
     </section>
+    
   </body>
 </html>

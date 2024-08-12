@@ -7,7 +7,6 @@ body {
   background-color: black;
   color: white;
 }
-
 section {
   display: flex;
   flex-wrap: wrap;
@@ -16,14 +15,12 @@ section {
   font-size: 40px;
   font-weight: 300;
 }
-
 #output {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
   gap: 15px;
 }
-
 .btn {
   flex-basis: calc(25% - 10px);
   margin: 5px;
@@ -34,30 +31,71 @@ section {
   cursor: pointer;
   color: white;
 }
-
+.cButton,
+.cButton:focus{
+  background-color: #ad2a21;
+}
+.cButton:hover {
+  background-color: #c7443b;
+}
 .light,
 .light:focus {
-  background-color: #4e505f;
+  background-color: #179BAE;
 }
-
 .light:hover {
-  background-color: #8890a5;
+  background-color: #40b8ca;
 }
-
 .blue,
 .blue:focus {
   background-color: #4b5efc;
 }
-
 .blue:hover {
   background-color: #798bf9;
 }
-
 .dark,
 .dark:focus {
   background-color: #2e2f38;
 }
-
 .dark:hover {
   background-color: #505266;
 }
+/* --------------------- grafiKEH --------------------- */
+/* Modal general style */
+.modal {
+  display: none; /* Initially hidden */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #4b5efc;
+  color: #ffffff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 0;
+  width: 300px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+/* Modal buttons */
+.modal-content button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;  
+  cursor: pointer;
+}
+#yesBtn {
+  background-color: #0ba93a;
+}
+#noBtn {
+  background-color: #ad2a21;
+}
+/* --------------------- grafiKEH --------------------- */
